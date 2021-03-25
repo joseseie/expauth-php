@@ -1,0 +1,45 @@
+{
+    "name": "explicador-dependency/auth",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Arnaldo Manuel",
+            "email": "70331507+arnaldomanuel@users.noreply.github.com"
+        }
+    ],
+    "description": "Pacote de autenticação",
+    "require": {
+        "php": "^7.3|^8.0",
+        "fideloper/proxy": "^4.2",
+        "fruitcake/laravel-cors": "^1.0",
+        "guzzlehttp/guzzle": "^6.3",
+        "laravel/framework": "^7.0",
+        "laravel/socialite": "^5.2",
+        "laravel/tinker": "^2.0"
+      
+    },
+    "require-dev": {
+        "facade/ignition": "^2.0",
+        "fzaninotto/faker": "^1.9.1",
+        "mockery/mockery": "^1.3.1",
+        "nunomaduro/collision": "^4.1",
+        "phpunit/phpunit": "^8.5"
+    },
+  
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Explicador\\Authentication\\ExpAuth"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Explicador\\Authentication\\": "src/"
+        }
+    },
+    "scripts": {
+        "cs": "php-cs-fixer fix"
+    }
+}
