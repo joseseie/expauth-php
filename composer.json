@@ -1,11 +1,11 @@
 {
-    "name": "explicador-dependency/auth",
+    "name": "explicador/expauth-php",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
             "name": "Arnaldo Manuel",
-            "email": "70331507+arnaldomanuel@users.noreply.github.com"
+            "email": "developer@explicador.co.mz"
         }
     ],
     "description": "Pacote de autenticação",
@@ -17,7 +17,6 @@
         "laravel/framework": "^7.0",
         "laravel/socialite": "^5.2",
         "laravel/tinker": "^2.0"
-      
     },
     "require-dev": {
         "facade/ignition": "^2.0",
