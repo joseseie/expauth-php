@@ -18,6 +18,9 @@ Este pacote utiliza um outro pacote socialite ([Oficial de Laravel](https://lara
 ## Passos para instalação
 
 ### 1. Instalar o pacote
+
+Utilize o [Composer](https://getcomposer.org/) para instalar este pacote:
+
 ```
 composer require explicador/expauth-php
 ```
@@ -76,6 +79,27 @@ EXPLICADOR_CLIENT_SECRET=
 EXPLICADOR_CLIENT_REDIRECT=
 ```
 
+### 6. Configuração dos callbacks 
+
+Os redirects são configurados nas consolas de desenvolvedores das provedoras. A seguir, copie o callback que tiver definido na provedora, e cole no respectivo `CLIENT_REDIRECT` nas configurações de `.env` acima.
+
+- Consola da Google: [https://developers.google.com/identity/sign-in/web/sign-in](https://developers.google.com/identity/sign-in/web/sign-in)
+- [Consola do Facebook ](https://developers.facebook.com/apps/)
+- [Consola do Linkedin](https://www.linkedin.com/developers/apps)
+- [ Consola do Github ](https://github.com/settings/developers)
+
+Defina os redirects no seguinte formato:
+
+#### Exemplos:
+
+* https://meusite.com/auth/google/callback
+* http://localhost:8000/auth/linkedin/callback
+* https://meuproduto.com/auth/{provedora}/callback
+* http://localhost:9000/auth/{provedora}/callback
+
+> Note que se o seu site estiver em produção, é importante que tenha certificado de segurança, ou seja, o site deve correr no protocolo **https** exemplo: https://explicador.co.mz
+
+
 ## Outras configurações
 
 Todas elas disponibilizam chaves a serem incluídas no ficheiro `.env`
@@ -97,28 +121,6 @@ Coloque o link da imagem que deseja que seja apresentado. A imagem deve ser PNG 
 ```
 LOGO_PATH=
 ```
-
-### 3. Configuração dos callbacks
-
-Os redirects são configurados nas consolas de desenvolvedores das provedoras. 
-
-- Consola da Google: [https://developers.google.com/identity/sign-in/web/sign-in](https://developers.google.com/identity/sign-in/web/sign-in)
-- [Consola do Facebook ](https://developers.facebook.com/apps/)
-- [Consola do Linkedin](https://www.linkedin.com/developers/apps)
-- [ Consola do Github ](https://github.com/settings/developers)
-
-
-Defina os redirects no seguinte formato:
-
-#### Exemplos:
-
-https://meusite.com/auth/google/callback
-http://localhost:8000/auth/linkedin/callback
-https://meuproduto.com/auth/{provedora}/callback
-http://localhost:9000/auth/{provedora}/callback
-
-> Note que se o seu site estiver em produção, é importante que tenha certificado de segurança, ou seja, o site deve correr no protocolo **https** exemplo: https://explicador.co.mz
-
 
 ## Integrando a dialog na página
  
@@ -153,8 +155,8 @@ Basta apenas colar e personalizar o código abaixo na parte do html onde deseja 
 Autores
 -------
 
-* [Arnaldo Manuel] @arnaldomanuel 
-* [José Seie] @joseseie
+* [Arnaldo Manuel](https://github.com/arnaldomanuel)
+* [José Seie](https://github.com/joseseie)
 * [The Community Contributors]
 
 Contribuições
