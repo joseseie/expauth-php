@@ -83,10 +83,10 @@ EXPLICADOR_CLIENT_REDIRECT=
 
 Os redirects são configurados nas consolas de desenvolvedores das provedoras. A seguir, copie o callback que tiver definido na provedora, e cole no respectivo `CLIENT_REDIRECT` nas configurações de `.env` acima.
 
-- Consola da Google: [https://developers.google.com/identity/sign-in/web/sign-in](https://developers.google.com/identity/sign-in/web/sign-in)
-- [Consola do Facebook ](https://developers.facebook.com/apps/)
+- [Consola da Google](https://developers.google.com/identity/sign-in/web/sign-in)
+- [Consola do Facebook](https://developers.facebook.com/apps/)
 - [Consola do Linkedin](https://www.linkedin.com/developers/apps)
-- [ Consola do Github ](https://github.com/settings/developers)
+- [Consola do Github](https://github.com/settings/developers)
 
 Defina os redirects no seguinte formato:
 
