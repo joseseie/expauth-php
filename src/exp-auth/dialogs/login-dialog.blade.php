@@ -14,8 +14,7 @@
                 <div class="text-center mb-5 login-main-left-header pt-4">
                     <img src="{{env('LOGO_PATH')}}" class="img-fluid" alt="LOGO" style="width: 100px;">
                     <h5 class="mt-3 mb-3">Bem Vindos</h5>
-                    <p>It is a long established fact that a reader <br> will be distracted by the readable.</p>
-                </div>
+                     </div>
 
                 @include('expauth::social-logins-options')
               
