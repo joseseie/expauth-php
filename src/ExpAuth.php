@@ -17,9 +17,7 @@ class ExpAuth extends ServiceProvider
     $this->publishes([
         __DIR__ . '/config' => config_path('/')
     ]);
-    $this->publishes([
-        __DIR__.'/exp-auth' => app_path('resources'),
-    ]);
+   
 
     $this->mergeConfigFrom(
         __DIR__.'/services.php', 'services'
